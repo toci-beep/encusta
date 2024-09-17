@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Preferencias</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #4682b4;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #4682b4;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4682b4;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #315f8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Encuesta de Preferencias</h1>
+        <form action="enviar.php" method="post">
+            <div class="question">
+                <label for="anime">¿Cuál es tu anime favorito?</label>
+                <textarea id="anime" name="anime" placeholder="Escribe tu respuesta aquí..." required></textarea>
+            </div>
+            <div class="question">
+                <label for="comida">¿Cuál es tu comida favorita?</label>
+                <textarea id="comida" name="comida" placeholder="Escribe tu respuesta aquí..." required></textarea>
+            </div>
+            <div class="question">
+                <label for="color">¿Cuál es tu color favorito?</label>
+                <textarea id="color" name="color" placeholder="Escribe tu respuesta aquí..." required></textarea>
+            </div>
+            <div class="question">
+                <label for="peliculas">¿Qué tipo de películas te gustan?</label>
+                <textarea id="peliculas" name="peliculas" placeholder="Escribe tu respuesta aquí..." required></textarea>
+            </div>
+            <div class="question">
+                <label for="videos">¿Qué clase de videos te gustan?</label>
+                <textarea id="videos" name="videos" placeholder="Escribe tu respuesta aquí..." required></textarea>
+            </div>
+            <button type="submit">Enviar Respuestas</button>
+        </form>
+    </div>
+</body>
+</html>
